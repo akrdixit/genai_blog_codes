@@ -42,7 +42,7 @@ embeddings = HuggingFaceEmbeddings(
 
 document_search = FAISS.from_texts(texts, embeddings)
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"]="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"
+os.environ["HUGGINGFACEHUB_API_TOKEN"]="hf_*****************"
 
 llm=HuggingFaceHub(repo_id="google/flan-t5-xxl", model_kwargs={"temperature":1e-10})
 
